@@ -12,10 +12,10 @@ Stop switching tabs to read documentation or watch tutorials—view them right n
 
 ## ✨ Features
 
-- **🌐 Website Rendering:** Render any HTTPS website directly in an output cell.
-- **▶️ YouTube Integration:** Intelligent parsing of YouTube URLs to embed the video player.
-- **📐 Customizable:** Easily adjust width, height, and alignment of the viewport.
-- **⚡ Lightweight:** Zero heavy dependencies; built on top of standard IPython display tools.
+- 🌐 Website Rendering: Render any HTTPS website directly in an output cell.
+- ▶️ YouTube Integration: Intelligent parsing of YouTube URLs to embed the video player.
+- 📐 Customizable: Easily adjust width, height, and alignment of the viewport.
+- ⚡ Lightweight: Zero heavy dependencies; built on top of standard IPython display tools.
 
 ---
 
@@ -25,13 +25,15 @@ You can install **NexusViewNew** via pip:
 
 ```bash
 pip install NexusViewNew
-```
-```bash
- pip install -r requirements_dev.txt
-```
-```bash
-conda creat -n NexusViewNew_env python=3.8 -y
-```
-```bash
+pip install -r requirements_dev.txt
+conda create -n NexusViewNew_env python=3.8 -y
 conda activate NexusViewNew_env
+```
+
+---
+
+## 🚀 Usage
+
+```python
+print("Hello from NexusViewNew")
 ```
