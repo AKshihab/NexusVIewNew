@@ -3,11 +3,11 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-__version__ = "0.0.2"
-REPO_NAME = "NexusVIewNew"
+__version__ = "0.0.3"
+REPO_NAME = "NexusViewNew"
 AUTHOR_USER_NAME = "AK_SHIHAB"
 AUTHOR_EMAIL = "shihabkaiyumhossen@gmail.com"
-SRC_REPO = "NexusVIewNew"
+SRC_REPO = "NexusViewNew"
 
 setuptools.setup(
     name=SRC_REPO,

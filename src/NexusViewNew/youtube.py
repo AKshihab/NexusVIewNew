@@ -1,7 +1,7 @@
 from IPython.display import HTML, display
 import re
-from NexusVIewNew.custom_exception import InvalidURLException
-from NexusVIewNew.logger import logger
+from NexusViewNew.custom_exception import InvalidURLException
+from NexusViewNew.logger import logger
 
 def render_youtube_video(url: str, width: int = 780, height: int = 440):
   try:

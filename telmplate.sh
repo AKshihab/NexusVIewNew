@@ -1,5 +1,5 @@
 #1.Set your project name variable
-export project_NAME = "NexusVIewNew"
+export project_NAME = "NexusViewNew"
 
 
 # 2.Creat the folder structure 

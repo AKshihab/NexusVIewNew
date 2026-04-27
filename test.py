@@ -1,5 +1,5 @@
-from NexusVIewNew.logger import logger
-from NexusVIewNew.custom_exception import InvalidURLException
+from NexusViewNew.logger import logger
+from NexusViewNew.custom_exception import InvalidURLException
 
 try:
     raise InvalidURLException()

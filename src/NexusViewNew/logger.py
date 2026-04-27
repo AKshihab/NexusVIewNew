@@ -16,4 +16,4 @@ logging.basicConfig(
     ]
 )
 
-logger = logging.getLogger("NexusVIewNew")
+logger = logging.getLogger("NexusViewNew")
