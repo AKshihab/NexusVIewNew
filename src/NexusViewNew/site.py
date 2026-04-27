@@ -1,4 +1,4 @@
-from IPython.display import display
+from IPython.display import IFrame, display
 import urllib.request
 from NexusViewNew.custom_exception import InvalidURLException
 from NexusViewNew.logger import logger
@@ -19,8 +19,8 @@ def is_valid(URL: str) -> bool:
 def render_site(URL: str, width: str = "100%", height: str = "600") -> str:
     try:
         if is_valid(URL):
-            response = display.IFrame(src=URL, width=width, height=height)
-            display.display(response)
+            response = IFrame(src=URL, width=width, height=height)
+            display(response)
             return "success"
         else:
             raise InvalidURLException
