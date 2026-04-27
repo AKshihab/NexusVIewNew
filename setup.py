@@ -3,7 +3,7 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-__version__ = "0.0.6"
+__version__ = "0.0.7"
 REPO_NAME = "NexusViewNew"
 AUTHOR_USER_NAME = "AK_SHIHAB"
 AUTHOR_EMAIL = "shihabkaiyumhossen@gmail.com"

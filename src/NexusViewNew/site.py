@@ -1,4 +1,5 @@
-from IPython.display import IFrame, display
+from html import escape
+from IPython.display import HTML, display
 import urllib.request
 from NexusViewNew.custom_exception import InvalidURLException
 from NexusViewNew.logger import logger
@@ -19,8 +20,16 @@ def is_valid(URL: str) -> bool:
 def render_site(URL: str, width: str = "100%", height: str = "600") -> str:
     try:
         if is_valid(URL):
-            response = IFrame(src=URL, width=width, height=height)
-            display(response)
+            iframe = f"""
+            <iframe
+                src="{escape(URL, quote=True)}"
+                width="{escape(str(width), quote=True)}"
+                height="{escape(str(height), quote=True)}"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            """
+            display(HTML(iframe))
             return "success"
         else:
             raise InvalidURLException
